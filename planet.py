@@ -21,3 +21,9 @@ class Planet():
 
         if not star:
             raise ValueError("name, planet_type, and star must be non-empty strings")
+
+    def orbit(self):
+        return f"{self.name} is orbiting around {self.star}..."
+
+    def __str__(self):
+        return f"Planet: {self.name} | Type: {self.planet_type} | Star: {self.star}"
